@@ -45,5 +45,6 @@ jobs:
             echo "::error file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
             echo "::warning::This is the warning message"
             echo "::error::This is the error message"
-            echo "::warning title=onlyTitle::withOnlyMessage"
-            echo "::error title=onlyTitle::withOnlyMessage"
+            echo "::warning title=withTitle::withMessage"
+            echo "::error title=withTitle::withessage"
+            echo "::warning title=onlyTitle"
