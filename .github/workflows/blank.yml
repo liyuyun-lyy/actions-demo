@@ -50,3 +50,4 @@ jobs:
             echo "::warning title=onlyTitle"
             echo "::warning file=README.md,line=1,col=5::withFile"
             echo "::warning file=README.md,line=4,col=5::shouldGoToLine4"
+            echo "::error title=this is title,file=README.md,col=1,endColumn=3,line=1,endLine=3::all"
