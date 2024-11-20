@@ -53,6 +53,7 @@ jobs:
             echo "::error title=this is title,file=README.md,col=1,endColumn=3,line=1,endLine=3::all"
             echo "::notice::This is the notice message, for more information see https://www.google.com/"
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
