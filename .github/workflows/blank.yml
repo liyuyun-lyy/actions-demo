@@ -52,6 +52,12 @@ jobs:
             echo "::warning file=README.md,line=4,col=5::shouldGoToLine4"
             echo "::error title=this is title,file=README.md,col=1,endColumn=3,line=1,endLine=3::all"
             echo "::notice::This is the notice message, for more information see https://www.google.com/"
+      - name: another step
+        run: |
+            echo "This is another step"
+            sleep 30
+            echo "::warning title=after sleep::This is another step after sleep"
+
   test:
     runs-on: ubuntu-latest
     steps:
